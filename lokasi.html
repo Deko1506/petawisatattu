@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Informasi Lokasi Wisata</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('gmbr_lokasiwit.JPG') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    #navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(52, 152, 219, 0.9);
+      padding: 12px 20px;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    #navbar nav {
+      display: flex;
+      justify-content: flex-end;
+      gap: 15px;
+    }
+
+    #navbar nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 16px;
+      border-radius: 6px;
+      background-color: rgba(255, 255, 255, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    #navbar nav a:hover {
+      background-color: #2980b9;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transform: translateY(-2px);
+    }
+
+    #navbar nav a:active {
+      background-color: #2471a3;
+      transform: scale(0.96);
+    }
+
+    main {
+      padding: 100px 20px 40px;
+      max-width: 1200px;
+      margin: auto;
+      background-color: rgba(255, 255, 255, 0.85);
+      border-radius: 10px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      width: 280px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-content h3 {
+      margin-top: 0;
+      color: #2c3e50;
+    }
+
+    .card-content p {
+      color: #555;
+      font-size: 14px;
+    }
+
+    .card-content button {
+      margin-top: 10px;
+      padding: 6px 12px;
+      font-size: 13px;
+      border: none;
+      border-radius: 5px;
+      background-color: #3498db;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .card-content button:hover {
+      background-color: #2980b9;
+    }
+
+    .detail {
+      display: none;
+      margin-top: 10px;
+      font-size: 13px;
+      color: #333;
+    }
+
+    footer {
+      margin-top: 20px;
+      text-align: center;
+      padding: 15px;
+      color: #eeeeee;
+      font-size: 14px;
+      background-color: rgba(0,0,0,0.4);
+    }
+
+    .footer-links {
+      margin-top: 10px;
+    }
+
+    .footer-links a {
+      color: #ffffff;
+      text-decoration: underline;
+      margin: 0 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <header id="navbar">
+    <nav>
+      <a href="beranda.html">Beranda</a>
+      <a href="peta.html">Peta</a>
+      <a href="lokasi.html">Informasi Lokasi</a>
+      <a href="profil.html">Profil</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Informasi Lokasi Wisata</h1>
+    <div class="container">
+
+      <div class="card">
+  <img src="pantai_tanjung_bastian.jpg" alt="Pantai Tanjung Bastian" />
+  <div class="card-content">
+    <h3>Pantai Tanjung Bastian</h3>
+    <p>Pantai dengan pasir putih dan air laut jernih, cocok untuk rekreasi keluarga.</p>
+    <a href="ld_tanjungbastian.html" class="detail-button">Lihat Detail</a>
+  </div>
+</div>
+
+
+      <!-- Contoh 2 -->
+      <div class="card">
+        <img src="bukit_tuamese.jpg" alt="Bukit Tuamese" />
+        <div class="card-content">
+          <h3>Bukit Tuamese</h3>
+          <p>Pemandangan dari ketinggian dan suasana tenang membuat tempat ini populer.</p>
+           <a href="ld_bukittuamese.html" class="detail-button">Lihat Detail</a>
+       </div>
+      </div>
+      
+      <div class="card">
+  <img src="puncak_nuaf.jpg" alt="Puncak Nuaf Nefomasi" />
+  <div class="card-content">
+    <h3>Puncak Nuaf Nefomasi</h3>
+    <p>Tempat yang populer untuk menikmati sunrise dan sunset, dikelilingi oleh keindahan alam yang menakjubkan.</p>
+     <a href="ld_puncaknuafnefomasi.html" class="detail-button">Lihat Detail</a>
+       </div>
+      </div>
+
+
+<div class="card">
+  <img src="wisata_hutan_oeluan.jpg" alt="Wisata Hutan Oeluan" />
+  <div class="card-content">
+    <h3>Wisata Hutan Oeluan</h3>
+    <p>Hutan yang rimbun dengan berbagai flora dan fauna, ideal untuk hiking dan menjelajahi alam.</p>
+   <a href="ld_hutanwisataoeluan.html" class="detail-button">Lihat Detail</a>
+       </div>
+      </div>
+
+<div class="card">
+  <img src="kampung_adat_tamkesi.jpeg" alt="Kampung Adat Tamkesi" />
+  <div class="card-content">
+    <h3>Kampung Adat Tamkesi</h3>
+    <p>Tempat yang kaya akan budaya dan tradisi lokal, menawarkan pengalaman unik bagi pengunjung.</p>
+   <a href="ld_kampungadattamkesi.html" class="detail-button">Lihat Detail</a>
+       </div>
+      </div>
+
+<div class="card">
+  <img src="benteng_oesoko.jpg" alt="Benteng Oesoko" />
+  <div class="card-content">
+    <h3>Benteng Oesoko</h3>
+    <p>Bangunan bersejarah yang dikelilingi oleh pemandangan alam yang indah, cocok untuk belajar sejarah.</p>
+    <a href="ld_bentengoesoko.html" class="detail-button">Lihat Detail</a>
+       </div>
+      </div>
+
+<div class="card">
+  <img src="gereja_sasi.jpg" alt="Gereja St.Antonius Padua Sasi" />
+  <div class="card-content">
+    <h3>Gereja St. Antonius Padua Sasi</h3>
+    <p>Gereja yang memiliki arsitektur unik dan pemandangan alam yang menawan di sekitarnya.</p>
+    <a href="ld_gerejast.antoniuspaduasasi.html" class="detail-button">Lihat Detail</a>
+       </div>
+      </div>
+
+<div class="card">
+  <img src="gua_bitauni.jpg" alt="Gua Sta. Maria Bitauni" />
+  <div class="card-content">
+    <h3>Gua Sta. Maria Bitauni</h3>
+    <p>Gua yang menakjubkan dengan stalaktit dan stalagmit, menawarkan pengalaman petualangan yang menarik.</p>
+    <a href="ld_Guasantamariabitauni.html" class="detail-button">Lihat Detail</a>
+       </div>
+      </div>
+
+<div class="card">
+  <img src="au_eden.jpg" alt="Agrowisata Au Eden" />
+  <div class="card-content">
+    <h3>Agrowisata Au Eden</h3>
+    <p>Tempat wisata yang menggabungkan alam dan pertanian, ideal untuk belajar tentang pertanian organik.</p>
+   <a href="ld_agrowisataaueden.html" class="detail-button">Lihat Detail</a>
+       </div>
+      </div>
+
+<div class="card">
+  <img src="pantai_oeusapi.jpg" alt="Pantai Oeusapi" />
+  <div class="card-content">
+    <h3>Pantai Oeusapi</h3>
+    <p>Pantai yang tenang dengan pemandangan yang menakjubkan, sempurna untuk bersantai dan menikmati alam.</p>
+   <a href="ld_pantaioesapi.html" class="detail-button">Lihat Detail</a>
+       </div>
+      </div>
+
+<div class="card">
+  <img src="air_terjun_bi'aki.jpg" alt="Air Terjun Bi'Aki" />
+  <div class="card-content">
+    <h3>Air Terjun Bi'Aki</h3>
+    <p>Air terjun yang indah dengan kolam alami, tempat yang sempurna untuk berenang dan bersantai.</p>
+   <a href="ld_airterjunbiAki.html" class="detail-button">Lihat Detail</a>
+       </div>
+      </div>
+
+<div class="card">
+  <img src="air_terjun_besin.jpg" alt="Air Terjun Besin" />
+  <div class="card-content">
+    <h3>Air Terjun Besin</h3>
+    <p>Air terjun yang menakjubkan dengan suara gemericik air yang menenangkan, cocok untuk piknik.</p>
+   <a href="ld_airterjunbesin.html" class="detail-button">Lihat Detail</a>
+       </div>
+      </div>
+
+<div class="card">
+  <img src="pohon_nelu.png" alt="Sunset Pohon Jomblo Nelu" />
+  <div class="card-content">
+    <h3>Sunset Pohon Jomblo Nelu</h3>
+    <p>Tempat yang terkenal dengan pemandangan matahari terbenam yang spektakuler, ideal untuk foto.</p>
+    <a href="ld_sunsetpohonjomblonelu.html" class="detail-button">Lihat Detail</a>
+       </div>
+      </div>
+
+<div class="card">
+  <img src="air_terjun_pah'koto.jpg" alt="Air Terjun Pahkoto" />
+  <div class="card-content">
+    <h3>Air Terjun Pahkoto</h3>
+    <p>Air terjun yang menawan dengan keindahan alam sekitarnya, tempat yang sempurna untuk berpetualang.</p>
+     <a href="ld_airterjunpahkoto.html" class="detail-button">Lihat Detail</a>
+       </div>
+      </div>
+
+<div class="card">
+  <img src="mata_air_oelolok.jpg" alt="Mata Air Oelolok" />
+  <div class="card-content">
+    <h3>Sumber Mata Air Oelolok</h3>
+    <p>Tempat yang menyegarkan dengan mata air alami, ideal untuk relaksasi dan menikmati alam.</p>
+    <a href="ld_sumbermataairoelolok.html" class="detail-button">Lihat Detail</a>
+       </div>
+      </div>
+
+<div class="card">
+  <img src="bukit_bikon.png" alt="Bukit Bikon" />
+  <div class="card-content">
+    <h3>Bukit Bikon</h3>
+    <p>Spot yang menawarkan pemandangan luas dan udara segar, cocok untuk hiking dan bersantai.</p>
+    <a href="ld_bukitbikon.html" class="detail-button">Lihat Detail</a>
+       </div>
+      </div>
+
+<div class="card">
+  <img src="telaga_biru_tua_kolo.png" alt="Telaga Biru Cafe Tua Kolo" />
+  <div class="card-content">
+    <h3>Telaga Biru Cafe Tua Kolo</h3>
+    <p>Tempat yang indah dengan telaga biru dan kafe, sempurna untuk bersantai sambil menikmati pemandangan.</p>
+   <a href="ld_telagabiruTTU.html" class="detail-button">Lihat Detail</a>
+       </div>
+      </div>
+    </div>
+
+    <footer>
+      &copy; 2025 Pemerintah Kabupaten TTU • Dikembangkan oleh Mahasiswa Universitas Timor
+      <div class="footer-links">
+        <a href="beranda.html">Kembali ke Beranda</a> | 
+        <a href="profil.html">Profil Kami</a> | 
+        <a href="peta.html">Lihat Peta</a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.querySelectorAll('.card-content button').forEach(button => {
+      button.addEventListener('click', () => {
+        const detail = button.nextElementSibling;
+        if (detail.style.display === 'block') {
+          detail.style.display = 'none';
+          button.textContent = 'Lihat Detail';
+        } else {
+          detail.style.display = 'block';
+          button.textContent = 'Sembunyikan Detail';
+        }
+      });
+    });
+  </script>
+</body>
+</html>

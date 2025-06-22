@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Telaga Biru TTU</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f8ff;
+      color: #2c3e50;
+    }
+
+    header {
+      background-color: #3498db;
+      padding: 15px 20px;
+      color: white;
+      text-align: center;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .image-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .image-row img {
+      width: 30%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #2980b9;
+      margin-top: 30px;
+    }
+
+    ul {
+      padding-left: 20px;
+      line-height: 1.7;
+    }
+
+    .info-box {
+      background-color: #ecf0f1;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+
+    .highlight {
+      background-color: #eaf6ff;
+      padding: 10px 15px;
+      border-left: 5px solid #3498db;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      padding: 15px;
+      background-color: #3498db;
+      color: white;
+    }
+
+    .close-tab {
+      position: fixed;
+      top: 10px;
+      right: 15px;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      background-color: #e74c3c;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 9999;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .source {
+      font-size: 13px;
+      margin-top: 10px;
+    }
+
+    .source a {
+      color: #2980b9;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="close-tab" onclick="closePage()">×</div>
+
+  <header>
+    <h1>Telaga Biru TTU</h1>
+    <p>Keindahan Unik Tiga Mata Air di Perbatasan TTU–Timor Leste</p>
+  </header>
+
+  <main>
+    <div class="image-row">
+      <img src="telaga_biru_tua_kolo2.jpg" alt="Telaga Biru TTU 1">
+      <img src="telaga_biru_tua_kolo3.jpg" alt="Telaga Biru TTU 2">
+      <img src="telaga_biru_tua_kolo4.jpg" alt="Telaga Biru TTU 3">
+    </div>
+
+    <section>
+      <h2>🌊 Daya Tarik & Fenomena Alam</h2>
+      <ul>
+        <li>Terbentuk dari bekas galian kerikil yang kini diisi tiga mata air jernih.</li>
+        <li>Warna air berubah dari biru cerah di pagi hari menjadi putih susu saat senja.</li>
+        <li>Dikelilingi tebing cadas dan vegetasi hijau alami yang sangat fotogenik.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>📍 Lokasi & Akses</h2>
+      <ul>
+        <li>Terletak di Desa Tubu, Kecamatan Bikomi Lulat, TTU, dekat perbatasan Timor Leste.</li>
+        <li>Akses melalui jalan tanah dan bebatuan – belum beraspal sepenuhnya.</li>
+        <li>Transportasi umum belum tersedia. Disarankan menggunakan kendaraan pribadi atau ojek lokal.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>👥 Profil Pengunjung</h2>
+      <ul>
+        <li>Didominasi pecinta alam, fotografer, dan wisatawan yang mencari ketenangan.</li>
+        <li>Aktivitas favorit: fotografi alam, eksplorasi, dan observasi fenomena warna air.</li>
+      </ul>
+    </section>
+
+    <section class="info-box">
+      <h2>💰 Tarif Masuk</h2>
+      <p>Saat ini belum ada tarif resmi. Pengunjung dapat masuk secara <strong>gratis</strong>, namun disarankan memberi <strong>kontribusi sukarela</strong> untuk mendukung kebersihan dan pengelolaan lokal.</p>
+    </section>
+
+    <section class="highlight">
+      <h2>✉️ Etika & Kebijakan Adat</h2>
+      <ul>
+        <li>Telaga dianggap suci oleh warga setempat, wajib menjaga sikap dan kebersihan.</li>
+        <li>Dilarang mencuci, buang sampah, atau melakukan aktivitas yang merusak lingkungan.</li>
+        <li>Hormati aturan dan arahan warga sebagai bentuk penghormatan terhadap adat lokal.</li>
+      </ul>
+    </section>
+
+    <div class="source">
+      Sumber: Dokumentasi Warga Tubu • catatanlapangan.org
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Pemerintah Kabupaten TTU • Halaman ini dikembangkan oleh Mahasiswa Universitas Timor
+  </footer>
+
+  <script>
+    function closePage() {
+      window.location.href = "lokasi.html";
+    }
+  </script>
+
+</body>
+</html>

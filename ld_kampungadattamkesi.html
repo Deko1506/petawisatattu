@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kampung Adat Tamkesi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdf9f3;
+      color: #2c3e50;
+    }
+
+    header {
+      background-color: #8e44ad;
+      padding: 15px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .image-row {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .image-row img {
+      flex: 1 1 30%;
+      max-width: 30%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .image-row img {
+        max-width: 100%;
+        flex: 1 1 100%;
+      }
+    }
+
+    h2 {
+      color: #7d3c98;
+      margin-top: 30px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .highlight {
+      background-color: #ede0f2;
+      padding: 12px 15px;
+      border-left: 5px solid #8e44ad;
+      margin-bottom: 20px;
+    }
+
+    .info-box {
+      background-color: #f5eef8;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      padding: 15px;
+      background-color: #8e44ad;
+      color: white;
+    }
+
+    .close-tab {
+      position: fixed;
+      top: 10px;
+      right: 15px;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      background-color: #c0392b;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 9999;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .source {
+      font-size: 13px;
+      margin-top: 10px;
+    }
+
+    .source a {
+      color: #8e44ad;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Tombol close -->
+  <div class="close-tab" onclick="closePage()">×</div>
+
+  <header>
+    <h1>Kampung Adat Tamkesi</h1>
+    <p>Pusat Tradisi Leluhur dan Budaya Atoin Meto</p>
+  </header>
+
+  <main>
+    <div class="image-row">
+      <img src="kampung_adat_tamkesi.jpeg" alt="Kampung Adat Tamkesi">
+      <img src="kampung_adat_tamkesi2.jpg" alt="Kampung Adat Tamkesi">
+      <img src="kampung_adat_tamkesi3.jpg" alt="Kampung Adat Tamkesi">
+    </div>
+
+    <section>
+      <h2>Deskripsi Singkat</h2>
+      <p>Kampung Adat Tamkesi adalah destinasi wisata budaya yang terletak di Desa Tautpah, Kecamatan Biboki Selatan, Kabupaten Timor Tengah Utara (TTU), Nusa Tenggara Timur. Dikenal sebagai pusat Kerajaan Biboki, kampung ini menawarkan pengalaman mendalam tentang kehidupan tradisional masyarakat Atoin Meto (suku Dawan) yang masih memegang teguh adat istiadat leluhur.</p>
+    </section>
+
+    <section>
+      <h2>Profil Pengunjung</h2>
+      <p>Kampung Adat Tamkesi menarik minat wisatawan yang tertarik dengan budaya dan sejarah. Wisatawan lokal dari Nusa Tenggara Timur dan sekitarnya sering mengunjungi tempat ini untuk mengenal lebih dekat budaya Atoin Meto. Selain itu, wisatawan domestik dari berbagai daerah di Indonesia juga mulai tertarik untuk menjelajahi kampung adat ini.</p>
+    </section>
+
+    <section class="info-box">
+      <h2>💰 Tarif Masuk</h2>
+      <p>Saat ini, belum ada tarif resmi yang dikenakan untuk memasuki kawasan Kampung Adat Tamkesi.</p>
+      <ul>
+        <li>Pengunjung disarankan membawa <strong>uang tunai</strong> jika menggunakan jasa pemandu lokal atau membeli makanan dan minuman dari warung sekitar.</li>
+        <li>Kontribusi sukarela sangat dianjurkan sebagai bentuk dukungan terhadap <em>kelestarian budaya dan kebersihan lingkungan</em>.</li>
+      </ul>
+    </section>
+
+    <section class="highlight">
+      <h2>🕒 Jam Operasional</h2>
+      <p><strong>Kampung Adat Tamkesi terbuka 24 jam</strong> untuk umum. Waktu terbaik untuk berkunjung:</p>
+      <ul>
+        <li><strong>Pagi hari:</strong> Menjelang matahari terbit untuk suasana yang lebih segar dan tenang.</li>
+        <li><strong>Sore hari:</strong> Menjelang matahari terbenam sambil menikmati pemandangan alam sekitar.</li>
+      </ul>
+      <p>Disarankan memulai kunjungan sejak pagi untuk menikmati pengalaman budaya dan keindahan alam secara maksimal.</p>
+    </section>
+
+    <div class="source">
+      Sumber: <a href="https://batastimor.com" target="_blank">batastimor.com</a> • <a href="https://nttfocus.com" target="_blank">nttfocus.com</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Pemerintah Kabupaten TTU • Halaman ini dikembangkan oleh Mahasiswa Universitas Timor
+  </footer>
+
+  <script>
+    function closePage() {
+      window.location.href = "lokasi.html";
+    }
+  </script>
+
+</body>
+</html>

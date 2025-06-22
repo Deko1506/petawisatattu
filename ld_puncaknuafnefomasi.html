@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Puncak Nuaf Nefomasi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f9f8;
+      color: #2c3e50;
+    }
+
+    header {
+      background-color: #7f8c8d;
+      padding: 15px 20px;
+      color: white;
+      text-align: center;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .image-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .image-row img {
+      width: 33.33%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #34495e;
+      margin-top: 30px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .highlight {
+      background-color: #e8f6f3;
+      padding: 12px 15px;
+      border-left: 5px solid #1abc9c;
+      margin-bottom: 20px;
+    }
+
+    .info-box {
+      background-color: #ecf0f1;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      padding: 15px;
+      background-color: #7f8c8d;
+      color: white;
+    }
+
+    .close-tab {
+      position: fixed;
+      top: 10px;
+      right: 15px;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      background-color: #e74c3c;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 9999;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .source {
+      font-size: 13px;
+      margin-top: 10px;
+    }
+
+    .source a {
+      color: #1abc9c;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .image-row {
+        flex-direction: column;
+      }
+
+      .image-row img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Tombol close (X) -->
+  <div class="close-tab" onclick="closePage()">×</div>
+
+  <header>
+    <h1>Puncak Nuaf Nefomasi</h1>
+    <p>Destinasi Alam yang Alami & Tenang untuk Pendaki dan Penikmat Sunrise</p>
+  </header>
+
+  <main>
+    <div class="image-row">
+      <img src="puncak_nuaf2.jpg" alt="Puncak Nuaf Nefomasi 1">
+      <img src="puncak_nuaf3.jpg" alt="Puncak Nuaf Nefomasi 2">
+      <img src="puncak_nuaf4.jpg" alt="Puncak Nuaf Nefomasi 3">
+    </div>
+
+    <section>
+      <h2>Profil Pengunjung</h2>
+      <p>Puncak Nuaf Nefomasi menarik minat berbagai kalangan, terutama para pecinta alam dan pendaki yang mencari pengalaman mendaki di kawasan yang masih alami dan belum banyak dijamah.</p>
+      <p>Wisatawan lokal dari Nusa Tenggara Timur dan sekitarnya sering mengunjungi tempat ini untuk menikmati keindahan alam dan suasana tenang yang ditawarkan. Selain itu, wisatawan domestik dari berbagai daerah di Indonesia juga mulai tertarik menjelajahi kawasan ini karena keasriannya dan potensi petualangan yang menantang.</p>
+    </section>
+
+    <section class="info-box">
+      <h2>💰 Tarif Masuk</h2>
+      <p>Saat ini, belum ada tarif resmi yang dikenakan untuk memasuki kawasan Puncak Nuaf Nefomasi. Namun, disarankan:</p>
+      <ul>
+        <li>Membawa <strong>uang tunai</strong> untuk jasa pemandu lokal atau keperluan lainnya.</li>
+        <li>Memberikan kontribusi sukarela kepada masyarakat setempat guna mendukung kelestarian dan kebersihan kawasan wisata.</li>
+      </ul>
+    </section>
+
+    <section class="highlight">
+      <h2>🕒 Jam Operasional</h2>
+      <p><strong>Puncak Nuaf Nefomasi terbuka 24 jam</strong>. Waktu terbaik untuk mendaki adalah:</p>
+      <ul>
+        <li><strong>Pagi hari:</strong> Menjelang matahari terbit untuk udara sejuk dan panorama sunrise.</li>
+        <li><strong>Sore hari:</strong> Menjelang senja untuk menikmati pemandangan sunset dan menghindari kabut tebal.</li>
+      </ul>
+      <p>Disarankan memulai pendakian sejak pagi agar perjalanan aman dan panorama dapat dinikmati maksimal.</p>
+    </section>
+
+    <div class="source">
+      Sumber: <a href="https://batastimor.com" target="_blank">batastimor.com</a> • <a href="https://nttfocus.com" target="_blank">nttfocus.com</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Pemerintah Kabupaten TTU • Halaman ini dikembangkan oleh Mahasiswa Universitas Timor
+  </footer>
+
+  <!-- Script fungsi close -->
+  <script>
+    function closePage() {
+      window.location.href = "lokasi.html";
+    }
+  </script>
+
+</body>
+</html>

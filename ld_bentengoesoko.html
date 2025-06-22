@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Benteng Oesoko</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      color: #2c3e50;
+    }
+
+    header {
+      background-color: #34495e;
+      padding: 15px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .image-row {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .image-row img {
+      flex: 1 1 30%;
+      max-width: 30%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .image-row img {
+        max-width: 100%;
+        flex: 1 1 100%;
+      }
+    }
+
+    h2 {
+      color: #2e86c1;
+      margin-top: 30px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .info-box {
+      background-color: #eaf2f8;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+
+    .highlight {
+      background-color: #d6eaf8;
+      padding: 12px 15px;
+      border-left: 5px solid #3498db;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      padding: 15px;
+      background-color: #34495e;
+      color: white;
+    }
+
+    .close-tab {
+      position: fixed;
+      top: 10px;
+      right: 15px;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      background-color: #e74c3c;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 9999;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .source {
+      font-size: 13px;
+      margin-top: 10px;
+    }
+
+    .source a {
+      color: #2980b9;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Tombol close -->
+  <div class="close-tab" onclick="closePage()">×</div>
+
+  <header>
+    <h1>Benteng Oesoko</h1>
+    <p>Perpaduan Keindahan Alam dan Warisan Sejarah di Pesisir Utara Timor</p>
+  </header>
+
+  <main>
+    <div class="image-row">
+      <img src="benteng_oesoko2.jpg" alt="Benteng Oesoko">
+      <img src="benteng_oesoko3.jpg" alt="Benteng Oesoko">
+      <img src="benteng_oesoko4.jpg" alt="Benteng Oesoko">
+    </div>
+
+    <section>
+      <h2>Deskripsi Singkat</h2>
+      <p>Benteng Oesoko adalah destinasi wisata alam dan sejarah yang terletak di Desa Oesoko, Kecamatan Insana Utara, Kabupaten Timor Tengah Utara (TTU), Nusa Tenggara Timur. Terletak di pesisir utara Pulau Timor, benteng ini menawarkan perpaduan antara keindahan alam dan nilai sejarah yang mendalam.</p>
+    </section>
+
+    <section>
+      <h2>Profil Pengunjung</h2>
+      <p>Benteng Oesoko menarik minat wisatawan yang tertarik dengan sejarah, budaya, dan keindahan alam. Wisatawan lokal dari Nusa Tenggara Timur dan sekitarnya sering mengunjungi tempat ini untuk mengenal lebih dekat sejarah dan budaya setempat. Selain itu, wisatawan domestik dari berbagai daerah di Indonesia juga mulai tertarik untuk menjelajahi benteng ini.</p>
+    </section>
+
+    <section class="info-box">
+      <h2>💰 Tarif Masuk</h2>
+      <p>Saat ini, belum ada tarif resmi yang dikenakan untuk memasuki kawasan Benteng Oesoko.</p>
+      <ul>
+        <li>Pengunjung disarankan membawa <strong>uang tunai</strong> jika ingin menggunakan jasa pemandu lokal atau membeli makanan/minuman dari warung sekitar.</li>
+        <li>Kontribusi sukarela sangat dianjurkan untuk mendukung <em>pelestarian dan kebersihan</em> kawasan ini.</li>
+      </ul>
+    </section>
+
+    <section class="highlight">
+      <h2>🕒 Jam Operasional</h2>
+      <p><strong>Benteng Oesoko terbuka 24 jam</strong> untuk umum. Waktu terbaik untuk berkunjung adalah:</p>
+      <ul>
+        <li><strong>Pagi hari:</strong> Menjelang matahari terbit untuk suasana tenang dan cahaya alami.</li>
+        <li><strong>Sore hari:</strong> Menjelang matahari terbenam untuk menikmati pemandangan pantai dan cuaca yang sejuk.</li>
+      </ul>
+      <p>Disarankan untuk memulai kunjungan sejak pagi agar bisa menikmati panorama alam dan sejarah secara maksimal.</p>
+    </section>
+
+    <div class="source">
+      Sumber: <a href="https://nttfocus.com" target="_blank">nttfocus.com</a> • <a href="https://batastimor.com" target="_blank">batastimor.com</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Pemerintah Kabupaten TTU • Halaman ini dikembangkan oleh Mahasiswa Universitas Timor
+  </footer>
+
+  <script>
+    function closePage() {
+      window.location.href = "lokasi.html";
+    }
+  </script>
+
+</body>
+</html>

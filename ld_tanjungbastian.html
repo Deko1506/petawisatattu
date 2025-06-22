@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Pantai Tanjung Bastian</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f8ff;
+      color: #2c3e50;
+    }
+
+    header {
+      background-color: #3498db;
+      padding: 15px 20px;
+      color: white;
+      text-align: center;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .image-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .image-row img {
+      width: 32%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #2980b9;
+      margin-top: 30px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .highlight {
+      background-color: #eaf6ff;
+      padding: 10px 15px;
+      border-left: 5px solid #3498db;
+      margin-bottom: 20px;
+    }
+
+    .info-box {
+      background-color: #ecf0f1;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      padding: 15px;
+      background-color: #3498db;
+      color: white;
+    }
+
+    .source {
+      font-size: 13px;
+      margin-top: 10px;
+    }
+
+    .source a {
+      color: #2980b9;
+      text-decoration: underline;
+    }
+
+    .close-tab {
+      position: fixed;
+      top: 10px;
+      right: 15px;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      background-color: #e74c3c;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 9999;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Tombol X -->
+  <div class="close-tab" onclick="closePage()">×</div>
+
+  <header>
+    <h1>Pantai Tanjung Bastian</h1>
+    <p>Keindahan Alam di Ujung Perbatasan Timur Indonesia</p>
+  </header>
+
+  <main>
+    <div class="image-row">
+      <img src="pantai_tanjung_bastian.jpg" alt="Pantai Tanjung Bastian">
+      <img src="pantai_tanjung_bastian2.jpg" alt="Pantai Tanjung Bastian 2">
+      <img src="pantai_tanjung_bastian3.jpg" alt="Pantai Tanjung Bastian 3">
+    </div>
+
+    <section>
+      <h2>Profil Pengunjung</h2>
+      <p>Pantai Tanjung Bastian menjadi salah satu destinasi favorit bagi berbagai kalangan, baik wisatawan lokal maupun luar daerah. Pengunjung yang datang umumnya terdiri dari:</p>
+      <ul>
+        <li><strong>Warga Lokal:</strong> Masyarakat sekitar Timor Tengah Utara dan sekitarnya, sering berkunjung saat akhir pekan atau hari libur.</li>
+        <li><strong>Wisatawan Domestik:</strong> Turis dari daerah seperti Kupang dan Belu datang untuk menikmati panorama pantai.</li>
+        <li><strong>Pelancong dari Timor Leste:</strong> Karena lokasinya dekat perbatasan RI-RDTL, beberapa pengunjung berasal dari negara tetangga.</li>
+        <li><strong>Pelajar & Mahasiswa:</strong> Kerap mengadakan kunjungan edukatif atau camping sambil belajar tentang alam dan lingkungan.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🏖 Kegiatan Favorit Pengunjung</h2>
+      <ul>
+        <li><strong>Bersantai & Berpiknik:</strong> Banyak keluarga membawa tikar dan makanan untuk bersantai di bawah pohon rindang.</li>
+        <li><strong>Bermain Air & Pasir:</strong> Anak-anak hingga dewasa menikmati berenang dan bermain pasir.</li>
+        <li><strong>Berfoto & Menikmati Sunset:</strong> Tempat ini sangat fotogenik, terutama saat matahari terbenam.</li>
+        <li><strong>Festival & Acara Budaya:</strong> Saat ada pacuan kuda atau acara adat, pantai dipadati ribuan pengunjung.</li>
+      </ul>
+    </section>
+
+    <section class="info-box">
+      <h2>🎫 Tarif Masuk</h2>
+      <ul>
+        <li><strong>Roda Dua (Motor):</strong> Rp 3.000 per orang</li>
+        <li><strong>Mobil:</strong> Rp 20.000 per kendaraan</li>
+        <li><strong>Truk:</strong> Rp 30.000 per kendaraan</li>
+      </ul>
+      <p><em>Contoh:</em> Jika dua orang datang naik motor, maka total biaya masuk adalah <strong>Rp 6.000</strong>.</p>
+    </section>
+
+    <section class="highlight">
+      <h2>🕓 Jam Operasional</h2>
+      <p>Pantai Tanjung Bastian buka selama <strong>24 jam</strong>, memungkinkan pengunjung menikmati suasana pantai kapan saja, baik pagi, siang, sore, maupun malam hari.</p>
+    </section>
+
+    <div class="source">
+      Sumber: 
+      <a href="https://travel.detik.com" target="_blank">travel.detik.com</a> • 
+      <a href="https://batastimor.com" target="_blank">batastimor.com</a> • 
+      <a href="https://liputan6.com" target="_blank">liputan6.com</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Pemerintah Kabupaten TTU • Halaman ini dikembangkan oleh Mahasiswa Universitas Timor
+  </footer>
+
+  <!-- Fungsi untuk menutup halaman dan kembali -->
+  <script>
+    function closePage() {
+      window.location.href = "lokasi.html";
+    }
+  </script>
+
+</body>
+</html>

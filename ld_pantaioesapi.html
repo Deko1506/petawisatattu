@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Pantai Oesapi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      color: #2c3e50;
+    }
+
+    header {
+      background-color: #00a8ff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .image-row {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .image-row img {
+      flex: 1 1 30%;
+      max-width: 30%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #0984e3;
+      margin-top: 30px;
+    }
+
+    ul {
+      padding-left: 20px;
+      line-height: 1.7;
+    }
+
+    .info-box {
+      background-color: #dfe6e9;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+
+    .highlight {
+      background-color: #d0e8f2;
+      padding: 12px 15px;
+      border-left: 5px solid #00a8ff;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      padding: 15px;
+      background-color: #00a8ff;
+      color: white;
+    }
+
+    .close-tab {
+      position: fixed;
+      top: 10px;
+      right: 15px;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      background-color: #c0392b;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 9999;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .source {
+      font-size: 13px;
+      margin-top: 10px;
+    }
+
+    .source a {
+      color: #2980b9;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Tombol kembali -->
+  <div class="close-tab" onclick="closePage()">×</div>
+
+  <header>
+    <h1>Pantai Oesapi</h1>
+    <p>Keindahan Tersembunyi di Ujung Utara NTT</p>
+  </header>
+
+  <main>
+    <div class="image-row">
+      <img src="pantai_oeusapi2.jpg" alt="Pantai Oesapi 1">
+      <img src="pantai_oeusapi3.jpg" alt="Pantai Oesapi 2">
+      <img src="pantai_oeusapi4.jpg" alt="Pantai Oesapi 3">
+    </div>
+
+    <section>
+      <h2>Deskripsi Lokasi</h2>
+      <p>Pantai Oesapi terletak di Desa Humusu C, Kecamatan Insana Utara, Kabupaten TTU. Pantai ini memiliki pesona pasir hitam lembut, air laut biru jernih, serta suasana tenang yang cocok untuk bersantai. Karena belum terlalu dikenal luas, Pantai Oesapi masih alami dan bersih.</p>
+      <p>Menjelang sore, warung bambu mulai buka, menyajikan ikan bakar, jagung bakar, dan makanan lokal lainnya, menambah kenyamanan menikmati panorama laut sambil bersantap santai di tepi pantai.</p>
+    </section>
+
+    <section>
+      <h2>Daya Tarik & Aktivitas</h2>
+      <ul>
+        <li>Panorama sunset dengan langit oranye dan siluet yang indah.</li>
+        <li>Pasir hitam lembut dan ombak tenang, cocok untuk jalan kaki dan bersantai.</li>
+        <li>Warung tradisional di sore hari menyajikan menu lokal khas pantai.</li>
+        <li>Spot foto alami dengan latar laut dan suasana damai.</li>
+      </ul>
+    </section>
+
+    <section class="highlight">
+      <h2>🕒 Jam Operasional</h2>
+      <p>Pantai Oesapi buka setiap hari pukul <strong>08.00 – 18.00 WITA</strong>. Waktu terbaik untuk berkunjung adalah sore hari antara pukul 15.00 – 18.00 WITA.</p>
+    </section>
+
+    <section class="info-box">
+      <h2>💰 Tarif Masuk & Parkir</h2>
+      <p><strong>Tiket Masuk:</strong> Gratis</p>
+      <p><strong>Parkir:</strong></p>
+      <ul>
+        <li>Motor: ±Rp 3.000</li>
+        <li>Mobil atau bus: ±Rp 5.000 – Rp 10.000</li>
+      </ul>
+    </section>
+
+    <section class="info-box">
+      <h2>📍 Lokasi & Akses</h2>
+      <p>Pantai ini berada di Desa Humusu C, hanya sekitar 2 km dari Tanjung Bastian. Lokasinya dekat dengan perbatasan Indonesia–Timor Leste dan mudah diakses menggunakan kendaraan roda dua maupun roda empat melalui jalan desa yang baik.</p>
+    </section>
+
+    <div class="source">
+      Sumber: <a href="https://kupang.tribunnews.com" target="_blank">kupang.tribunnews.com</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Pemerintah Kabupaten TTU • Dikembangkan oleh Mahasiswa Universitas Timor
+  </footer>
+
+  <script>
+    function closePage() {
+      window.location.href = "lokasi.html";
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Bukit Bikon (Bikekneno)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f8ff;
+      color: #2c3e50;
+    }
+
+    header {
+      background-color: #3498db;
+      padding: 15px 20px;
+      color: white;
+      text-align: center;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .image-row {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .image-row img {
+      width: 30%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #2980b9;
+      margin-top: 30px;
+    }
+
+    ul {
+      padding-left: 20px;
+      line-height: 1.7;
+    }
+
+    .info-box {
+      background-color: #ecf0f1;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+
+    .highlight {
+      background-color: #eaf6ff;
+      padding: 10px 15px;
+      border-left: 5px solid #3498db;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      padding: 15px;
+      background-color: #3498db;
+      color: white;
+    }
+
+    .close-tab {
+      position: fixed;
+      top: 10px;
+      right: 15px;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      background-color: #e74c3c;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 9999;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .source {
+      font-size: 13px;
+      margin-top: 10px;
+    }
+
+    .source a {
+      color: #2980b9;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="close-tab" onclick="closePage()">×</div>
+
+  <header>
+    <h1>Bukit Bikon (Bikekneno)</h1>
+    <p>Panorama Hijau & Sunrise Eksotis dari Pegunungan Mollo Selatan</p>
+  </header>
+
+  <main>
+
+    <div class="image-row">
+      <img src="bukit_bikon2.jpg" alt="Bukit Bikon 1">
+      <img src="bukit_bikon3.jpg" alt="Bukit Bikon 2">
+      <img src="bukit_bikon4.jpg" alt="Bukit Bikon 3">
+    </div>
+
+    <section>
+      <h2>📍 Deskripsi Lokasi</h2>
+      <p>
+        Bukit Bikon, atau dikenal juga sebagai Bukit Bikekneno, merupakan destinasi wisata alam di <strong>Desa Bikekneno, Kecamatan Mollo Selatan, Kabupaten TTS</strong>. Tempat ini menawarkan keindahan lanskap hijau yang luas dan cocok untuk menikmati sunrise maupun sunset.
+      </p>
+    </section>
+
+    <section>
+      <h2>🌄 Keindahan & Suasana Alam</h2>
+      <ul>
+        <li>Panorama perbukitan dan lembah, sangat ideal untuk fotografi alam.</li>
+        <li>Udara sejuk dan suasana tenang, cocok untuk relaksasi dan healing alami.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>👥 Profil Pengunjung</h2>
+      <ul>
+        <li>Didominasi pecinta alam, keluarga, dan wisatawan lokal.</li>
+        <li>Cocok untuk trekking ringan dan piknik sederhana.</li>
+      </ul>
+    </section>
+
+    <section class="info-box">
+      <h2>💰 Tarif Masuk</h2>
+      <p><strong>Tiket Masuk:</strong> Belum ada tarif resmi.</p>
+      <ul>
+        <li>Pengunjung dianjurkan memberikan <em>donasi sukarela</em>.</li>
+        <li>Belum tersedia informasi terkait biaya parkir atau pemandu.</li>
+      </ul>
+    </section>
+
+    <section class="highlight">
+      <h2>🕒 Jam Operasional</h2>
+      <p>Buka setiap hari pukul <strong>06.00 – 18.00 WITA</strong>. Datang pagi sangat dianjurkan untuk menikmati udara segar dan pemandangan maksimal.</p>
+    </section>
+
+    <section class="info-box">
+      <h2>🅿 Fasilitas & Kapasitas</h2>
+      <ul>
+        <li>Area parkir luas (±50m x 50m): kapasitas 100 motor, 20 mobil, dan 10 bus.</li>
+        <li>Toilet umum, tempat ibadah, pusat informasi: <em>belum tersedia</em>.</li>
+        <li>Warung makanan: tersedia satu unit dengan camilan ringan.</li>
+        <li>Fasilitas difabel, evakuasi, dan asuransi: <em>belum tersedia</em>.</li>
+      </ul>
+    </section>
+
+    <div class="source">
+      Sumber: Dokumentasi & Wawancara Warga Desa Bikekneno
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Pemerintah Kabupaten TTS • Halaman ini dikembangkan oleh Mahasiswa Universitas Timor
+  </footer>
+
+  <script>
+    function closePage() {
+      window.location.href = "lokasi.html";
+    }
+  </script>
+
+</body>
+</html>

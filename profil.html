@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Profil Pembuat Proyek Peta</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+    }
+
+    /* Navbar */
+    #navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #3498db;
+      padding: 12px 20px;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    #navbar nav {
+      display: flex;
+      justify-content: flex-end;
+      gap: 15px;
+    }
+
+    #navbar nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 16px;
+      border-radius: 6px;
+      background-color: rgba(255, 255, 255, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    #navbar nav a:hover {
+      background-color: #2980b9;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transform: translateY(-2px);
+    }
+
+    #navbar nav a:active {
+      background-color: #2471a3;
+      transform: scale(0.96);
+    }
+
+    /* Konten halaman */
+    main {
+      padding: 100px 20px 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .centered-text {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .profile-card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      padding: 20px;
+      width: 260px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .profile-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .profile-card img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .profile-card h2 {
+      margin: 10px 0 5px;
+      font-size: 20px;
+      color: #2c3e50;
+    }
+
+    .profile-card p {
+      margin: 4px 0;
+      color: #555;
+      font-size: 14px;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      padding: 15px;
+      color: #eeeeee;
+      font-size: 14px;
+      background-color: rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header id="navbar">
+    <nav>
+      <a href="beranda.html">Beranda</a>
+      <a href="peta.html">Peta</a>
+      <a href="lokasi.html">Informasi Lokasi</a>
+      <a href="profil.html">Profil</a>
+    </nav>
+  </header>
+
+  <!-- Konten Utama -->
+  <main>
+    <h1>Profil Tim Pembuat Proyek Peta</h1>
+    <div class="centered-text">
+      <h4>Kelompok 4</h4>
+      <h4>Program Studi Teknologi Informasi</h4>
+      <h4>Fakultas Pertanian Sains dan Kesehatan</h4>
+      <h4>Universitas Timor</h4>
+    </div>
+    <hr>
+    <div class="container">
+      <div class="profile-card">
+        <img src="iince.jpg" alt="Sisilia Julianti Meak" width="">
+        <h2>Sisilia Julianti Meak</h2>
+        <p><strong>Nama Panggilan:</strong> Sesil</p>
+        <p><strong>Email:</strong> incejulianti@email.com</p>
+      </div>
+      <div class="profile-card">
+        <img src="vvero.jpg" alt="Bella Kartika">
+        <h2>Veronika Da Cunha Kolo</h2>
+        <p><strong>Nama Panggilan:</strong> Vero</p>
+        <p><strong>Email:</strong> Veronikadacunhakolo@gmail.com</p>
+      </div>
+      <div class="profile-card">
+        <img src="retno.jpg" alt="Citra Anjani">
+        <h2>Stefania Laura Retno Radja</h2>
+        <p><strong>Nama Panggilan:</strong> Retno</p>
+        <p><strong>Email:</strong> retnoradja08@gmail.com</p>
+      </div>
+      <div class="profile-card">
+        <img src="deny.jpg" alt="Daniel Pratama">
+        <h2>Bernard M. Deny Akoit</h2>
+        <p><strong>Nama Panggilan:</strong> Deny</p>
+        <p><strong>Email:</strong> dekoakoit1506@gmail.com</p>
+      </div>
+      <div class="profile-card">
+        <img src="ssandra.jpg" alt="Elisa Maharani">
+        <h2>Mariana Casandra Kolo</h2>
+        <p><strong>Nama Panggilan:</strong> Sandra</p>
+        <p><strong>Email:</strong> casandrakolo9@gmail.com</p>
+      </div>
+      <div class="profile-card">
+        <img src="rrandi.png" alt="Fajar Rahman">
+        <h2>Kandidus Meomanu</h2>
+        <p><strong>Nama Panggilan:</strong> Randi</p>
+        <p><strong>Email:</strong> meomanukandidus@gmail.com</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Pemerintah Kabupaten TTU • Dikembangkan oleh Mahasiswa Universitas Timor
+  </footer>
+
+</body>
+</html>

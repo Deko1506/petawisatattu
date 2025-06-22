@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Air Terjun Bi’Aki</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      color: #2c3e50;
+    }
+
+    header {
+      background-color: #16a085;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .image-row {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .image-row img {
+      flex: 1 1 30%;
+      max-width: 30%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #148f77;
+      margin-top: 30px;
+    }
+
+    ul {
+      padding-left: 20px;
+      line-height: 1.7;
+    }
+
+    .info-box {
+      background-color: #e0f2f1;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+
+    .highlight {
+      background-color: #d0ece7;
+      padding: 12px 15px;
+      border-left: 5px solid #16a085;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      padding: 15px;
+      background-color: #16a085;
+      color: white;
+    }
+
+    .close-tab {
+      position: fixed;
+      top: 10px;
+      right: 15px;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      background-color: #c0392b;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 9999;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .source {
+      font-size: 13px;
+      margin-top: 10px;
+    }
+
+    .source a {
+      color: #2980b9;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="close-tab" onclick="closePage()">×</div>
+
+  <header>
+    <h1>Air Terjun Bi’Aki</h1>
+    <p>Keindahan Alam Tersembunyi dari Pegunungan Mutis</p>
+  </header>
+
+  <main>
+    <div class="image-row">
+      <img src="air_terjun_bi'aki2.jpg" alt="Air Terjun Bi’Aki 1">
+      <img src="air_terjun_bi'aki3.jpg" alt="Air Terjun Bi’Aki 2">
+      <img src="air_terjun_bi'aki4.jpg" alt="Air Terjun Bi’Aki 3">
+    </div>
+
+    <section>
+      <h2>Deskripsi Lokasi</h2>
+      <p>Air Terjun Bi’Aki terbentuk dari mata air pegunungan yang mengalir melalui lima tingkatan, menciptakan kolam alami di tiap level. Airnya berasal dari hutan Mutis yang meresap dan turun ke lembah. Meskipun belum ditemukan aturan adat khusus secara daring, pengunjung tetap dihimbau menjaga etika dan menghormati lingkungan sekitar.</p>
+    </section>
+
+    <section>
+      <h2>Profil Pengunjung</h2>
+      <p>Mayoritas pengunjung adalah pecinta alam dan wisatawan lokal yang menyukai trekking dan fotografi. Karena belum banyak dieksplorasi, tempat ini cenderung tenang dan alami, serta lebih ramai di akhir pekan.</p>
+    </section>
+
+    <section class="info-box">
+      <h2>💰 Tarif Masuk</h2>
+      <p>Belum ada tarif resmi. Umumnya gratis atau cukup dengan <strong>donasi sukarela</strong>. Biaya tambahan seperti jasa parkir dan pemandu biasanya ditentukan oleh warga lokal.</p>
+    </section>
+
+    <section class="highlight">
+      <h2>🕒 Jam Operasional</h2>
+      <p>Belum ada jam operasional resmi. Waktu terbaik untuk berkunjung adalah antara <strong>07.00 – 17.00 WITA</strong>. Hindari berkunjung terlalu sore karena keterbatasan pencahayaan dan akses.</p>
+    </section>
+
+    <section class="info-box">
+      <h2>✨ Tips Sebelum Berkunjung</h2>
+      <ul>
+        <li>Hubungi warga lokal atau perangkat Desa Naekake B untuk informasi terkini.</li>
+        <li>Datang pagi hari agar waktu trekking lebih aman dan menyenangkan.</li>
+        <li>Siapkan dana kecil untuk parkir, donasi, atau jasa pemandu lokal.</li>
+        <li>Bawa perlengkapan seperti air minum, makanan ringan, dan alas kaki anti licin.</li>
+      </ul>
+    </section>
+
+    <section class="info-box">
+      <h2>📝 Ringkasan</h2>
+      <ul>
+        <li><strong>Jenis pengunjung:</strong> Wisatawan lokal & pecinta alam.</li>
+        <li><strong>Tarif masuk:</strong> Donasi sukarela.</li>
+        <li><strong>Jam kunjungan:</strong> Pagi hingga sore.</li>
+      </ul>
+    </section>
+
+    <div class="source">
+      Sumber: <a href="https://kupang.tribunnews.com" target="_blank">kupang.tribunnews.com</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Pemerintah Kabupaten TTU • Dikembangkan oleh Mahasiswa Universitas Timor
+  </footer>
+
+  <script>
+    function closePage() {
+      window.location.href = "lokasi.html";
+    }
+  </script>
+
+</body>
+</html>

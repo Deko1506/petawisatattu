@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Bukit Tuamese</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #eef6f9;
+      color: #2c3e50;
+    }
+
+    header {
+      background-color: #2ecc71;
+      padding: 15px 20px;
+      color: white;
+      text-align: center;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .image-row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .image-row img {
+      width: 33.33%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #27ae60;
+      margin-top: 30px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .highlight {
+      background-color: #eafbea;
+      padding: 12px 15px;
+      border-left: 5px solid #27ae60;
+      margin-bottom: 20px;
+    }
+
+    .info-box {
+      background-color: #dff6e2;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      padding: 15px;
+      background-color: #2ecc71;
+      color: white;
+    }
+
+    .close-tab {
+      position: fixed;
+      top: 10px;
+      right: 15px;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      background-color: #e74c3c;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 9999;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .source {
+      font-size: 13px;
+      margin-top: 10px;
+    }
+
+    .source a {
+      color: #27ae60;
+      text-decoration: underline;
+    }
+
+    /* Responsif untuk layar kecil */
+    @media (max-width: 768px) {
+      .image-row {
+        flex-direction: column;
+      }
+
+      .image-row img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Tombol X untuk kembali ke halaman lokasi -->
+  <div class="close-tab" onclick="closePage()">×</div>
+
+  <header>
+    <h1>Bukit Tuamese</h1>
+    <p>Panorama Alami yang Menyerupai Raja Ampat</p>
+  </header>
+
+  <main>
+    <div class="image-row">
+      <img src="bukit_tuamese4.jpg" alt="Bukit Tuamese 1">
+      <img src="bukit_tuamese3.jpg" alt="Bukit Tuamese 2">
+      <img src="bukit_tuamese2.jpg" alt="Bukit Tuamese 3">
+    </div>
+
+    <section>
+      <h2>Profil Pengunjung</h2>
+      <p>Bukit Tuamese menarik berbagai kalangan wisatawan, mulai dari lokal hingga mancanegara. Keindahan alamnya yang menyerupai Raja Ampat menjadikannya destinasi favorit bagi:</p>
+      <ul>
+        <li><strong>Wisatawan Lokal:</strong> Warga sekitar sering datang untuk rekreasi keluarga dan bersantai.</li>
+        <li><strong>Wisatawan Domestik:</strong> Pengunjung dari berbagai daerah Indonesia menikmati panorama unik Bukit Tuamese.</li>
+        <li><strong>Wisatawan Mancanegara:</strong> Turis asing, terutama dari Timor Leste, juga tertarik menjelajahi keindahan alam di sini.</li>
+      </ul>
+    </section>
+
+    <section class="info-box">
+      <h2>🎫 Tarif Parkir</h2>
+      <p>Tidak ada tiket masuk untuk mengunjungi Bukit Tuamese. Namun, pengunjung dikenakan biaya parkir:</p>
+      <ul>
+        <li><strong>Mobil:</strong> Rp 10.000</li>
+        <li><strong>Motor:</strong> Rp 5.000</li>
+      </ul>
+      <p>Biaya ini digunakan untuk pemeliharaan dan pengelolaan area wisata oleh masyarakat setempat.</p>
+    </section>
+
+    <section class="highlight">
+      <h2>🕒 Jam Operasional</h2>
+      <p>Bukit Tuamese buka setiap hari dari pukul <strong>07.00 hingga 18.00 WITA</strong>. Waktu terbaik untuk berkunjung adalah sore hari, sekitar pukul 16.00, untuk menikmati panorama matahari terbenam yang memukau.</p>
+    </section>
+
+    <div class="source">
+      Sumber: <a href="https://travel.detik.com" target="_blank">travel.detik.com</a> • <a href="https://batastimor.com" target="_blank">batastimor.com</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Pemerintah Kabupaten TTU • Halaman ini dikembangkan oleh Mahasiswa Universitas Timor
+  </footer>
+
+  <script>
+    function closePage() {
+      window.location.href = "lokasi.html";
+    }
+  </script>
+
+</body>
+</html>

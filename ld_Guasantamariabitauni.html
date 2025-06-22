@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Gua Santa Maria Bitauni</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f6f6f6;
+      color: #2c3e50;
+    }
+
+    header {
+      background-color: #5d6d7e;
+      padding: 15px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .image-row {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .image-row img {
+      flex: 1 1 30%;
+      max-width: 30%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #34495e;
+      margin-top: 30px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .info-box {
+      background-color: #e8ebef;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+
+    .highlight {
+      background-color: #dfe6e9;
+      padding: 12px 15px;
+      border-left: 5px solid #5d6d7e;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      padding: 15px;
+      background-color: #5d6d7e;
+      color: white;
+    }
+
+    .close-tab {
+      position: fixed;
+      top: 10px;
+      right: 15px;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      background-color: #c0392b;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 9999;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .source {
+      font-size: 13px;
+      margin-top: 10px;
+    }
+
+    .source a {
+      color: #2980b9;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Tombol kembali ke halaman lokasi -->
+  <div class="close-tab" onclick="closePage()">×</div>
+
+  <header>
+    <h1>Gua Santa Maria Bitauni</h1>
+    <p>Tempat Ziarah Rohani di Tengah Keindahan Alam Bukit Bitauni</p>
+  </header>
+
+  <main>
+    <div class="image-row">
+      <img src="gua_bitauni2.jpg" alt="Gua Santa Maria Bitauni">
+      <img src="gua_bitauni3.jpg" alt="Pemandangan Sekitar Gua">
+      <img src="gua_bitauni4.jpg" alt="Area Doa Gua">
+    </div>
+
+    <section>
+      <h2>Deskripsi Lokasi</h2>
+      <p>Gua ini merupakan gua alam yang berada di Bukit Bitauni, sekitar 28 km dari Kota Kefamenanu. Untuk mencapainya, pengunjung harus menaiki sekitar 108 anak tangga dari batu alam yang disusun rapi, membentuk struktur berundak yang menambah kesan sakral. Di dalam gua terdapat patung Bunda Maria di ujung dinding, dikelilingi tempat lilin dan kursi doa. Terdapat juga patung Yesus di rongga sebelah kanan yang lebih gelap.</p>
+    </section>
+
+    <section>
+      <h2>Pengunjung dan Aktivitas</h2>
+      <p>Gua ini menarik minat peziarah Katolik dari berbagai daerah, terutama selama bulan devosi seperti Mei dan Oktober. Aktivitas yang biasa dilakukan antara lain:</p>
+      <ul>
+        <li>Berdoa secara pribadi</li>
+        <li>Mengikuti misa atau ibadat khusus</li>
+        <li>Menikmati ketenangan dan keindahan alam sekitar gua</li>
+      </ul>
+    </section>
+
+    <section class="info-box">
+      <h2>📌 Tips Berkunjung</h2>
+      <ul>
+        <li><strong>Etika:</strong> Hormati adat dan aturan lokal. Hindari mengambil foto saat upacara berlangsung tanpa izin.</li>
+        <li><strong>Perlengkapan:</strong> Bawa air minum, topi, dan alas kaki yang nyaman karena medan berbatu.</li>
+        <li><strong>Pemandu Lokal:</strong> Gunakan jasa pemandu lokal untuk informasi budaya dan sejarah gua.</li>
+      </ul>
+    </section>
+
+    <section class="info-box">
+      <h2>💰 Tarif Masuk</h2>
+      <p>Tidak ada tarif resmi untuk memasuki kawasan Gua Santa Maria Bitauni. Namun, pengunjung dapat memberikan <strong>donasi sukarela</strong> untuk membantu pemeliharaan dan kegiatan ziarah di tempat ini.</p>
+    </section>
+
+    <section class="highlight">
+      <h2>🕒 Jam Operasional</h2>
+      <p>Gua terbuka untuk umum setiap hari. Waktu kunjungan yang disarankan adalah pukul <strong>08.00 – 17.00 WITA</strong> untuk menghormati aktivitas masyarakat dan mendapatkan pengalaman yang optimal.</p>
+    </section>
+
+    <section class="info-box">
+      <h2>📍 Lokasi dan Akses</h2>
+      <p>Gua Santa Maria Bitauni terletak sekitar 28 km dari Kota Kefamenanu dan 60 km dari Atambua. Lokasi ini mudah dijangkau karena berada di dekat jalan utama Trans-Timor. Akses jalan baik dan dapat dilalui kendaraan roda dua maupun roda empat.</p>
+    </section>
+
+    <div class="source">
+      Sumber: <a href="https://kupang.tribunnews.com" target="_blank">kupang.tribunnews.com</a> • <a href="https://nttfocus.com" target="_blank">nttfocus.com</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Pemerintah Kabupaten TTU • Dikembangkan oleh Mahasiswa Universitas Timor
+  </footer>
+
+  <script>
+    function closePage() {
+      window.location.href = "lokasi.html";
+    }
+  </script>
+
+</body>
+</html>

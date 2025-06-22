@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Hutan Wisata Oeluan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f8f5;
+      color: #2c3e50;
+    }
+
+    header {
+      background-color: #27ae60;
+      padding: 15px 20px;
+      color: white;
+      text-align: center;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .image-row {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .image-row img {
+      flex: 1 1 30%;
+      max-width: 30%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .image-row img {
+        max-width: 100%;
+        flex: 1 1 100%;
+      }
+    }
+
+    h2 {
+      color: #239b56;
+      margin-top: 30px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .highlight {
+      background-color: #def5ed;
+      padding: 12px 15px;
+      border-left: 5px solid #1abc9c;
+      margin-bottom: 20px;
+    }
+
+    .info-box {
+      background-color: #eafaf1;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      padding: 15px;
+      background-color: #27ae60;
+      color: white;
+    }
+
+    .close-tab {
+      position: fixed;
+      top: 10px;
+      right: 15px;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      background-color: #e74c3c;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 9999;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .source {
+      font-size: 13px;
+      margin-top: 10px;
+    }
+
+    .source a {
+      color: #1abc9c;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Tombol close -->
+  <div class="close-tab" onclick="closePage()">×</div>
+
+  <header>
+    <h1>Hutan Wisata Oeluan</h1>
+    <p>Keindahan Alam yang Asri dan Cocok untuk Bersantai</p>
+  </header>
+
+  <main>
+    <div class="image-row">
+      <img src="wisata_hutan_oeluan2.jpg" alt="Hutan Wisata Oeluan">
+      <img src="wisata_hutan_oeluan3.jpg" alt="Hutan Wisata Oeluan">
+      <img src="wisata_hutan_oeluan4.jpg" alt="Hutan Wisata Oeluan">
+    </div>
+
+    <section>
+      <h2>Profil Pengunjung</h2>
+      <p>Hutan Wisata Oeluan menarik berbagai kalangan wisatawan, baik lokal maupun domestik. Wisatawan lokal berasal dari daerah sekitar seperti Kupang dan Atambua, sedangkan wisatawan domestik dari berbagai daerah di Indonesia mulai tertarik mengunjungi tempat ini karena keindahan alamnya yang masih alami.</p>
+      <p>Pengunjung biasanya datang untuk menikmati pemandangan, berfoto, dan bersantai bersama keluarga atau teman.</p>
+    </section>
+
+    <section class="info-box">
+      <h2>💰 Tarif Masuk</h2>
+      <p>Saat ini, belum ada tarif resmi yang dikenakan untuk memasuki kawasan Hutan Wisata Oeluan.</p>
+      <ul>
+        <li>Pengunjung disarankan membawa <strong>uang tunai</strong> jika ingin menggunakan jasa pemandu lokal atau membeli makanan dari warung sekitar.</li>
+        <li>Kontribusi sukarela kepada masyarakat setempat sangat dianjurkan untuk membantu menjaga <em>kebersihan dan kelestarian</em> kawasan wisata ini.</li>
+      </ul>
+    </section>
+
+    <section class="highlight">
+      <h2>🕒 Jam Operasional</h2>
+      <p><strong>Hutan Wisata Oeluan terbuka 24 jam</strong> untuk umum. Waktu terbaik untuk berkunjung:</p>
+      <ul>
+        <li><strong>Pagi hari:</strong> Menjelang matahari terbit untuk menikmati udara segar dan cahaya alami.</li>
+        <li><strong>Sore hari:</strong> Sebelum matahari terbenam untuk menikmati suasana sejuk dan pemandangan indah.</li>
+      </ul>
+      <p>Disarankan memulai kunjungan sejak pagi agar terhindar dari kabut yang biasanya turun pada siang hari.</p>
+    </section>
+
+    <div class="source">
+      Sumber: <a href="https://batastimor.com" target="_blank">batastimor.com</a> • <a href="https://nttfocus.com" target="_blank">nttfocus.com</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Pemerintah Kabupaten TTU • Halaman ini dikembangkan oleh Mahasiswa Universitas Timor
+  </footer>
+
+  <script>
+    function closePage() {
+      window.location.href = "lokasi.html";
+    }
+  </script>
+
+</body>
+</html>

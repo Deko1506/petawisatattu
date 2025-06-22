@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sumber Mata Air Oelolok</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f8ff;
+      color: #2c3e50;
+    }
+
+    header {
+      background-color: #3498db;
+      padding: 15px 20px;
+      color: white;
+      text-align: center;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #2980b9;
+      margin-top: 30px;
+    }
+
+    .image-row {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .image-row img {
+      width: 30%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .highlight {
+      background-color: #eaf6ff;
+      padding: 10px 15px;
+      border-left: 5px solid #3498db;
+      margin-bottom: 20px;
+    }
+
+    .info-box {
+      background-color: #ecf0f1;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      padding: 15px;
+      background-color: #3498db;
+      color: white;
+    }
+
+    .close-tab {
+      position: fixed;
+      top: 10px;
+      right: 15px;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      background-color: #e74c3c;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 9999;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .source {
+      font-size: 13px;
+      margin-top: 10px;
+    }
+
+    .source a {
+      color: #2980b9;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Tombol X -->
+  <div class="close-tab" onclick="closePage()">×</div>
+
+  <header>
+    <h1>Sumber Mata Air Oelolok</h1>
+    <p>Sumber Air Bersih Alami di Lereng Mutis</p>
+  </header>
+
+  <main>
+
+    <div class="image-row">
+      <img src="mata_air_oelolok2.jpg" alt="Sumber Oelolok 1">
+      <img src="mata_air_oelolok3.jpg" alt="Sumber Oelolok 2">
+      <img src="mata_air_oelolok4.jpg" alt="Sumber Oelolok 3">
+    </div>
+
+    <section>
+      <h2>📍 Deskripsi Lokasi</h2>
+      <p>
+        Sumber Mata Air Oelolok terletak di <strong>Desa Oelolok, Kecamatan Mutis, Kabupaten TTU</strong>. Lokasi ini merupakan sumber utama air bersih bagi warga, sekaligus memiliki potensi wisata lingkungan karena keasriannya.
+      </p>
+    </section>
+
+    <section>
+      <h2>👥 Profil Pengunjung</h2>
+      <ul>
+        <li>Didominasi warga lokal untuk mandi, mencuci, dan memasak.</li>
+        <li>Digunakan oleh warga sekitar dan pengunjung desa untuk keperluan sehari-hari.</li>
+      </ul>
+    </section>
+
+    <section class="info-box">
+      <h2>🎫 Tarif Masuk</h2>
+      <p><strong>Tiket Masuk:</strong> Gratis. Pengunjung dapat memberi <em>sumbangan sukarela</em> untuk kebersihan dan pemeliharaan area mata air.</p>
+    </section>
+
+    <section class="highlight">
+      <h2>🕓 Jam Operasional</h2>
+      <p>Terbuka setiap hari, tanpa batasan jam. Waktu terbaik untuk berkunjung adalah <strong>pagi hingga siang</strong>. Tidak disarankan datang malam karena tidak ada pencahayaan.</p>
+    </section>
+
+    <section>
+      <h2>🔍 Fungsi & Karakter</h2>
+      <ul>
+        <li>Merupakan sumber utama air bersih untuk kebutuhan rumah tangga dan pertanian warga Oelolok.</li>
+        <li>Lingkungan alami, berada di lereng pegunungan Mutis.</li>
+        <li>Belum dikelola sebagai objek wisata komersial.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>✅ Rekomendasi Pengunjung</h2>
+      <ul>
+        <li>Bawa wadah air jika ingin mengambil air untuk keperluan pribadi.</li>
+        <li>Hormati aktivitas warga yang menggunakan mata air untuk kebutuhan harian.</li>
+        <li>Siapkan kantong sampah dan jaga kebersihan lingkungan.</li>
+        <li>Hindari kunjungan malam hari.</li>
+      </ul>
+    </section>
+
+    <div class="source">
+      Sumber: Dokumentasi Desa Oelolok • Wawancara Warga Setempat
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Pemerintah Kabupaten TTU • Halaman ini dikembangkan oleh Mahasiswa Universitas Timor
+  </footer>
+
+  <script>
+    function closePage() {
+      window.location.href = "lokasi.html";
+    }
+  </script>
+
+</body>
+</html>
